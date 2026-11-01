@@ -1,0 +1,103 @@
+<section class="page-hero on-dark">
+  <img class="page-hero__bg" src="assets/img/salle-claire.jpg" alt="La salle du Salon Aurèle dressée pour le service du soir" width="1400" height="933" fetchpriority="high">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span class="sep" aria-hidden="true">/</span><span aria-current="page">Réserver</span>
+    </nav>
+    <p class="eyebrow">Réservation en ligne</p>
+    <h1 class="display-lg reveal">Votre table sur le quai</h1>
+    <p class="lead reveal reveal-d1" style="margin-top:1rem">Nous confirmons chaque demande par e-mail sous 24&nbsp;heures ouvrées. Au-delà de 8 couverts, consultez la page <a href="privatisation.html">privatisation</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split" style="align-items:start">
+    <div class="reveal">
+      <form id="form-reservation" class="form-grid" novalidate>
+        <div class="field">
+          <label for="res-name">Nom complet <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="res-name" name="nom" autocomplete="name" data-min="2" required>
+          <p class="error" id="res-name-err">Merci d'indiquer votre nom.</p>
+        </div>
+        <div class="field">
+          <label for="res-email">Adresse e-mail <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="res-email" name="email" autocomplete="email" required>
+          <p class="error" id="res-email-err">Adresse e-mail invalide.</p>
+        </div>
+        <div class="field">
+          <label for="res-date">Date souhaitée <span class="req" aria-hidden="true">*</span></label>
+          <input type="date" id="res-date" name="date" required>
+          <p class="hint">La maison est fermée dimanche et lundi.</p>
+          <p class="error" id="res-date-err">Choisissez une date à venir.</p>
+        </div>
+        <div class="field">
+          <label for="res-service">Service <span class="req" aria-hidden="true">*</span></label>
+          <select id="res-service" name="service" required>
+            <option value="">Choisir…</option>
+            <option>Déjeuner — 12&nbsp;h à 13&nbsp;h 15</option>
+            <option>Dîner — 19&nbsp;h 30 à 21&nbsp;h 15</option>
+          </select>
+          <p class="error" id="res-service-err">Choisissez un service.</p>
+        </div>
+        <div class="field">
+          <label for="res-guests">Nombre de couverts <span class="req" aria-hidden="true">*</span></label>
+          <select id="res-guests" name="couverts" required>
+            <option value="">Choisir…</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option>
+          </select>
+          <p class="error" id="res-guests-err">Indiquez le nombre de couverts.</p>
+        </div>
+        <div class="field">
+          <label for="res-menu">Menu envisagé</label>
+          <select id="res-menu" name="menu">
+            <option>À décider sur place</option>
+            <option>Le Sillon (déjeuner)</option>
+            <option>Carte blanche (dîner)</option>
+            <option>La Table d'Aurèle (samedi midi)</option>
+            <option>À la carte</option>
+          </select>
+        </div>
+        <fieldset class="field full">
+          <legend>Préférence de table</legend>
+          <div class="field-row">
+            <label><input type="radio" name="table" value="Salle principale" checked> Salle principale</label>
+            <label><input type="radio" name="table" value="Terrasse (mai à septembre)"> Terrasse (mai à septembre)</label>
+            <label><input type="radio" name="table" value="Bar, avant ou après"> Bar, avant ou après</label>
+          </div>
+        </fieldset>
+        <div class="field full">
+          <label for="res-notes">Allergies, occasions, précisions</label>
+          <textarea id="res-notes" name="notes" placeholder="Anniversaire, régime sans gluten, chaise haute…"></textarea>
+        </div>
+        <div class="field full">
+          <label style="text-transform:none;letter-spacing:0;font-size:.9rem;display:flex;gap:.6rem;align-items:flex-start">
+            <input type="checkbox" id="res-consent" name="consent" required style="width:1.05rem;height:1.05rem;flex:none;margin-top:.2rem">
+            <span>J'accepte que mes données soient utilisées uniquement pour le traitement de cette demande, conformément à la <a href="confidentialite.html">politique de confidentialité</a>. <span class="req" aria-hidden="true">*</span></span>
+          </label>
+          <p class="error" id="res-consent-err">Votre accord est nécessaire.</p>
+        </div>
+        <div class="full">
+          <button class="btn btn--wine" type="submit">Envoyer la demande de réservation</button>
+        </div>
+      </form>
+      <div class="form-success" id="reservation-success" hidden tabindex="-1">
+        <h3>Votre demande est bien envoyée</h3>
+        <p>Merci&nbsp;! Voici le résumé de votre demande&nbsp;:</p>
+        <ul class="info-list" id="reservation-recap" style="margin-block:1rem 1.4rem"></ul>
+        <p>Camille Fontaine ou un membre de l'équipe vous confirmera votre table par e-mail sous 24&nbsp;heures ouvrées. En cas d'urgence, <a href="mailto:matricestudio@protonmail.com">écrivez-nous directement</a>.</p>
+      </div>
+    </div>
+    <aside class="reveal reveal-d1" aria-labelledby="t-aside-res" style="background:var(--card);border:1px solid var(--hairline);border-radius:var(--radius);padding:clamp(1.8rem,3vw,2.4rem)">
+      <h2 id="t-aside-res" class="display-md" style="font-size:1.6rem">Bon à savoir</h2>
+      <ul class="info-list">
+        <li><span class="k">Confirmation</span><span class="v">Sous 24&nbsp;h ouvrées, par e-mail. Sans confirmation de notre part, la table n'est pas réservée.</span></li>
+        <li><span class="k">Maintien de la table</span><span class="v">15 minutes au-delà de l'heure convenue, le temps de vous prévenir.</span></li>
+        <li><span class="k">Grandes tablées</span><span class="v">Plus de 8 couverts&nbsp;? <a href="privatisation.html">Salons privés</a> sur demande.</span></li>
+        <li><span class="k">Annulation</span><span class="v">Gratuite jusqu'à 24&nbsp;h avant le service, par e-mail.</span></li>
+        <li><span class="k">Enfants</span><span class="v">Menu enfant 28&nbsp;€ au déjeuner, chaise haute sur demande.</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>

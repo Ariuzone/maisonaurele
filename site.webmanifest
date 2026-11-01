@@ -1,0 +1,16 @@
+{
+  "name": "Maison Aurèle — Restaurant gastronomique à Lyon",
+  "short_name": "Maison Aurèle",
+  "description": "Maison de gastronomie française contemporaine sur les quais de la Saône, à Lyon, depuis 1929.",
+  "lang": "fr",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#14100D",
+  "theme_color": "#14100D",
+  "icons": [
+    { "src": "favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "android-chrome-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "android-chrome-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/seal-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

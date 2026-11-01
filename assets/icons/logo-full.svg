@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" role="img" aria-label="Maison Aurèle, restaurant à Lyon">
+  <g fill="none" stroke="currentColor">
+    <circle cx="75" cy="75" r="56" stroke-width="1.6"/>
+    <circle cx="75" cy="75" r="49" stroke-width=".8" opacity=".85"/>
+    <path d="M50.5 102.5 L75 42 L99.5 102.5" stroke-width="4.2"/>
+    <path d="M60.5 79.5 L89.5 79.5" stroke-width="2.4"/>
+    <path d="M45.5 102.5 L56.5 102.5" stroke-width="2.4"/>
+    <path d="M93.5 102.5 L104.5 102.5" stroke-width="2.4"/>
+    <path d="M75 33.7 L77.3 37.7 L75 41.7 L72.7 37.7 Z" stroke-width="1.2" fill="currentColor" stroke="none"/>
+  </g>
+  <text x="168" y="74" font-family="Cormorant, Georgia, serif" font-size="46" font-weight="600" letter-spacing="10" fill="currentColor">MAISON</text>
+  <text x="168" y="122" font-family="Cormorant, Georgia, serif" font-size="46" font-weight="600" letter-spacing="10" fill="currentColor">AURÈLE</text>
+</svg>

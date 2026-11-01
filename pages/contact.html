@@ -1,0 +1,98 @@
+<section class="page-hero on-dark">
+  <img class="page-hero__bg" src="assets/img/lyon-saone.jpg" alt="Les quais de la Saône à Lyon au crépuscule" width="1600" height="1200" fetchpriority="high">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span class="sep" aria-hidden="true">/</span><span aria-current="page">Contact</span>
+    </nav>
+    <p class="eyebrow">Nous trouver, nous écrire</p>
+    <h1 class="display-lg reveal">17 quai Saint-Vincent, Lyon 1ᵉʳ</h1>
+    <p class="lead reveal reveal-d1" style="margin-top:1rem">Sur la Presqu'île, entre la place Terreaux et la Saône, face au quai — la façade de pierre, au n°&nbsp;17.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-pratique">
+  <div class="container split" style="align-items:start">
+    <div class="reveal">
+      <p class="eyebrow"><span class="num-section" aria-hidden="true">01</span> Informations pratiques</p>
+      <h2 class="display-lg" id="t-pratique">Venir à la maison</h2>
+      <ul class="info-list">
+        <li><span class="k">Adresse</span><span class="v">17 quai Saint-Vincent<br>69001 Lyon — Presqu'île</span></li>
+        <li><span class="k">Métro</span><span class="v">Ligne A — Hôtel de Ville – Louis Pradel (4&nbsp;min à pied) <small>· Ligne C — Croix-Paquet (6&nbsp;min)</small></span></li>
+        <li><span class="k">Parkings</span><span class="v">Parc-o Terreaux (5&nbsp;min) <small>· Parking Saint-Paul (8&nbsp;min, valet le soir)</small></span></li>
+        <li><span class="k">À vélo</span><span class="v">Stations Vélo'v n°&nbsp;1002 et 1013 à moins de 200&nbsp;m</span></li>
+        <li><span class="k">Horaires</span><span class="v">Mardi — Samedi<br>Déjeuner&nbsp;: 12&nbsp;h – 13&nbsp;h 45<br>Dîner&nbsp;: 19&nbsp;h 30 – 22&nbsp;h 30<br><small>Fermé dimanche et lundi</small></span></li>
+        <li><span class="k">E-mail</span><span class="v"><a href="mailto:matricestudio@protonmail.com">matricestudio@protonmail.com</a></span></li>
+      </ul>
+      <p style="margin-top:1.6rem"><a class="link-more" href="https://www.openstreetmap.org/?mlat=45.7668&mlon=4.8287#map=17/45.7668/4.8287" target="_blank" rel="noopener noreferrer">Ouvrir dans la carte <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+    <div class="reveal reveal-d1">
+      <p class="eyebrow"><span class="num-section" aria-hidden="true">02</span> Écrire à la maison</p>
+      <h2 class="display-lg" style="font-size:clamp(1.9rem,3.6vw,2.9rem)">Une question&nbsp;? Une envie&nbsp;?</h2>
+      <form id="form-contact" class="form-grid" novalidate>
+        <div class="field">
+          <label for="ct-name">Votre nom <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="ct-name" name="nom" autocomplete="name" data-min="2" required>
+          <p class="error" id="ct-name-err">Merci d'indiquer votre nom.</p>
+        </div>
+        <div class="field">
+          <label for="ct-email">Votre e-mail <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="ct-email" name="email" autocomplete="email" required>
+          <p class="error" id="ct-email-err">Adresse e-mail invalide.</p>
+        </div>
+        <div class="field full">
+          <label for="ct-subject">Sujet <span class="req" aria-hidden="true">*</span></label>
+          <select id="ct-subject" name="sujet" required>
+            <option value="">Choisir…</option>
+            <option>Réservation</option>
+            <option>Privatisation &amp; événements</option>
+            <option>Bons cadeaux</option>
+            <option>Presse &amp; partenariats</option>
+            <option>Candidature</option>
+            <option>Autre demande</option>
+          </select>
+          <p class="error" id="ct-subject-err">Choisissez un sujet.</p>
+        </div>
+        <div class="field full">
+          <label for="ct-message">Votre message <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="ct-message" name="message" data-min="10" required placeholder="Dites-nous tout…"></textarea>
+          <p class="error" id="ct-message-err">Votre message doit contenir au moins 10 caractères.</p>
+        </div>
+        <div class="full">
+          <button class="btn btn--wine" type="submit">Préparer mon message <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form-note" style="margin-top:.8rem">Votre messagerie s'ouvrira avec le message pré-rempli — nous répondons sous 48&nbsp;heures ouvrées.</p>
+        </div>
+      </form>
+      <div class="form-success" id="contact-success" hidden tabindex="-1">
+        <h3>Votre message est prêt</h3>
+        <p>Il ne reste qu'à l'envoyer&nbsp;: votre messagerie est pré-remplie. Si rien ne s'ouvre, <a id="contact-mailto" href="mailto:matricestudio@protonmail.com">cliquez ici pour nous écrire</a>. Nous répondons sous 48&nbsp;heures ouvrées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark on-dark" aria-labelledby="t-savoir">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"><span class="num-section" aria-hidden="true">03</span> Le bon savoir</p>
+      <h2 class="display-lg" id="t-savoir">Trois réflexes avant de venir</h2>
+    </div>
+    <div class="trio">
+      <article class="card reveal">
+        <p class="ornament">I</p>
+        <h3>Réserver d'abord</h3>
+        <p>La salle compte 35 couverts&nbsp;: sans réservation, nous ne pouvons rien promettre. Le formulaire en ligne est le plus sûr chemin. <a href="reservation.html">Réserver une table</a>.</p>
+      </article>
+      <article class="card reveal reveal-d1">
+        <p class="ornament">II</p>
+        <h3>Prévenir de tout</h3>
+        <p>Allergies, intolérances, occasion cachée&nbsp;: plus nous savons tôt, plus l'accueil est simple. Une note dans le formulaire suffit.</p>
+      </article>
+      <article class="card reveal reveal-d2">
+        <p class="ornament">III</p>
+        <h3>Venir en avance</h3>
+        <p>Le bar du salon ouvre 30 minutes avant chaque service. Un verre de blanc de la cave, la carte du soir annoncée&nbsp;: c'est déjà la maison.</p>
+      </article>
+    </div>
+  </div>
+</section>
